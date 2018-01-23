@@ -1,0 +1,6 @@
+framework module Pods_HastenTest {
+  umbrella header "Pods-HastenTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
