@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let startVC = SportViewController()
-        
         window?.rootViewController = UINavigationController(rootViewController: startVC)
         window?.makeKeyAndVisible()
         return true

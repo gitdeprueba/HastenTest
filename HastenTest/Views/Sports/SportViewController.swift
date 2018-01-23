@@ -12,12 +12,14 @@ class SportViewController: UIViewController {
 
     var sports : [Sports] = []
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
     
         self.title = "Sports"
         self.tableView.delegate = self
+        self.tableView.separatorStyle = .none
         self.tableView.dataSource = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "SportCell")
         self.getSports()
@@ -31,6 +33,9 @@ class SportViewController: UIViewController {
                 return
             }
             self.sports = sportsArray
+            DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
+            }
             self.tableView.reloadData()
         })
     }

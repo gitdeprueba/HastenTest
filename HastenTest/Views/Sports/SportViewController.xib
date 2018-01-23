@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SportViewController" customModule="HastenTest" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="cCt-XU-YDX" id="gHW-gd-gbs"/>
                 <outlet property="tableView" destination="J5S-er-NMk" id="WRg-jz-5xY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,13 +26,19 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cCt-XU-YDX">
+                    <rect key="frame" x="169.5" y="315.5" width="37" height="37"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="cCt-XU-YDX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="23a-L1-wqE"/>
                 <constraint firstItem="J5S-er-NMk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ewj-xc-rrf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J5S-er-NMk" secondAttribute="trailing" id="H6m-Gs-dcb"/>
                 <constraint firstItem="J5S-er-NMk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NEx-Vx-upv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J5S-er-NMk" secondAttribute="bottom" id="NJL-nS-TA6"/>
+                <constraint firstItem="cCt-XU-YDX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tsA-VI-H99"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
