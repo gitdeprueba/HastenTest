@@ -20,7 +20,6 @@
 		AFB198292017A2E900053C87 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB198282017A2E900053C87 /* Player.swift */; };
 		AFB1982C2017A41100053C87 /* SportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB1982A2017A41100053C87 /* SportViewController.swift */; };
 		AFB1982D2017A41100053C87 /* SportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB1982B2017A41100053C87 /* SportViewController.xib */; };
-		AFB198312017A75100053C87 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = AFB1982F2017A74D00053C87 /* players.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 		AFB198282017A2E900053C87 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		AFB1982A2017A41100053C87 /* SportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewController.swift; sourceTree = "<group>"; };
 		AFB1982B2017A41100053C87 /* SportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SportViewController.xib; sourceTree = "<group>"; };
-		AFB1982F2017A74D00053C87 /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +120,6 @@
 		AFB198122017A29C00053C87 /* HastenTest */ = {
 			isa = PBXGroup;
 			children = (
-				AFB1982F2017A74D00053C87 /* players.json */,
 				AFB198252017A2AE00053C87 /* Models */,
 				AFB1982E2017A41700053C87 /* Views */,
 				AFB198132017A29C00053C87 /* AppDelegate.swift */,
@@ -214,7 +211,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB198312017A75100053C87 /* players.json in Resources */,
 				AF75A4AC2017C4C5003ABD10 /* PlayerViewController.xib in Resources */,
 				AF75A4B12017C4EF003ABD10 /* PlayerTableViewCell.xib in Resources */,
 				AFB1981E2017A29C00053C87 /* LaunchScreen.storyboard in Resources */,
