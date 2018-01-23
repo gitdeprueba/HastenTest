@@ -12,6 +12,7 @@
 		AF75A4AC2017C4C5003ABD10 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF75A4AA2017C4C5003ABD10 /* PlayerViewController.xib */; };
 		AF75A4B02017C4EF003ABD10 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75A4AE2017C4EF003ABD10 /* PlayerTableViewCell.swift */; };
 		AF75A4B12017C4EF003ABD10 /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF75A4AF2017C4EF003ABD10 /* PlayerTableViewCell.xib */; };
+		AF75A4B42017C9A8003ABD10 /* WebServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF75A4B32017C9A8003ABD10 /* WebServiceLayer.swift */; };
 		AFB198142017A29C00053C87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB198132017A29C00053C87 /* AppDelegate.swift */; };
 		AFB1981B2017A29C00053C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB1981A2017A29C00053C87 /* Assets.xcassets */; };
 		AFB1981E2017A29C00053C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB1981C2017A29C00053C87 /* LaunchScreen.storyboard */; };
@@ -30,6 +31,7 @@
 		AF75A4AA2017C4C5003ABD10 /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 		AF75A4AE2017C4EF003ABD10 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		AF75A4AF2017C4EF003ABD10 /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTableViewCell.xib; sourceTree = "<group>"; };
+		AF75A4B32017C9A8003ABD10 /* WebServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceLayer.swift; sourceTree = "<group>"; };
 		AFB198102017A29C00053C87 /* HastenTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HastenTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB198132017A29C00053C87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB1981A2017A29C00053C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				AFB198262017A2BE00053C87 /* Sports.swift */,
 				AFB198282017A2E900053C87 /* Player.swift */,
+				AF75A4B32017C9A8003ABD10 /* WebServiceLayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				AF75A4B02017C4EF003ABD10 /* PlayerTableViewCell.swift in Sources */,
 				AFB198292017A2E900053C87 /* Player.swift in Sources */,
+				AF75A4B42017C9A8003ABD10 /* WebServiceLayer.swift in Sources */,
 				AFB1982C2017A41100053C87 /* SportViewController.swift in Sources */,
 				AFB198272017A2BE00053C87 /* Sports.swift in Sources */,
 				AFB198142017A29C00053C87 /* AppDelegate.swift in Sources */,

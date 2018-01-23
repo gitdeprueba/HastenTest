@@ -16,9 +16,9 @@ struct Sports : Codable {
         case type = "type"
     }
     
-    let players : [Player]?
-    let title : String?
-    let type : String?
+    let players : [Player]!
+    let title : String!
+    let type : String!
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)

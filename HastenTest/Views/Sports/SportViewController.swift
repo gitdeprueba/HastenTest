@@ -16,14 +16,27 @@ class SportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        self.title = "Sports"
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "SportCell")
-        //let sport = try! JSONDecoder().decode([Sports].self, from: fileData)
-        
+        self.getSports()
+    }
+    
+    
+    private func getSports() {
+        WebServiceLayer.retrieveSports({ (response) in
+            
+            guard let sportsArray = response else {
+                return
+            }
+            self.sports = sportsArray
+            self.tableView.reloadData()
+        })
     }
 
 }
+
 extension SportViewController: UITableViewDataSource, UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,12 +48,17 @@ extension SportViewController: UITableViewDataSource, UITableViewDelegate
         
         let sportTitle = self.sports[indexPath.row].title
         cell.textLabel?.text = sportTitle
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("hola")
+        let sport = self.sports[indexPath.row]
+        let playerVC = PlayerViewController()
+        playerVC.players = sport.players
+        playerVC.title = sport.title
+        self.navigationController?.pushViewController(playerVC, animated: true)
     }
 
 }

@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PlayerViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    var player : [Player] = []
+    @IBOutlet var tableView: UITableView!
+    var players : [Player] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.rowHeight = 110
         
         self.tableView.register(UINib.init(nibName: "PlayerTableViewCell", bundle: nil), forCellReuseIdentifier: "PlayerCell")
     }
@@ -25,16 +27,21 @@ class PlayerViewController: UIViewController {
 
 extension PlayerViewController: UITableViewDelegate, UITableViewDataSource
 {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.player.count
+        return self.players.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let player = self.players[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath) as! PlayerTableViewCell
-        cell.lblName.text = self.player[indexPath.row].name
-        cell.lblSurname.text = self.player[indexPath.row].surname
-        cell.lblDate.text = self.player[indexPath.row].date
+        cell.lblName.text = player.name
+        cell.lblSurname.text = player.surname
+        cell.lblDate.text = player.date
+        
+        let urlImage = URL(string: player.image)
+        cell.img.sd_setImage(with: urlImage , placeholderImage: #imageLiteral(resourceName: "placeholder"), options: [], completed: nil)
         
         return cell
     }
